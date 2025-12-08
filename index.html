@@ -98,7 +98,7 @@
  .navbar {
  position: sticky;
  top: 0;
- z-index: 20;
+ z-index: 100;
  background: rgba(255, 249, 245, 0.92);
  backdrop-filter: blur(12px);
  border-bottom: 1px solid rgba(255, 215, 122, 0.3);
@@ -112,6 +112,7 @@
  align-items: center;
  justify-content: space-between;
  gap: 24px;
+ position: relative;
  }
 
  .logo-wrap {
@@ -149,6 +150,7 @@
  display: flex;
  align-items: center;
  gap: 16px;
+ position: relative;
  }
 
  .nav-links {
@@ -156,6 +158,39 @@
  gap: 16px;
  font-size: 0.9rem;
  flex-wrap: wrap;
+ }
+
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ background: transparent;
+ border: none;
+ cursor: pointer;
+ padding: 8px;
+ z-index: 101;
+ position: relative;
+ }
+
+ .hamburger span {
+ display: block;
+ width: 24px;
+ height: 3px;
+ background: var(--nav);
+ border-radius: 2px;
+ transition: all 0.3s ease;
+ }
+
+ .hamburger.is-active span:nth-child(1) {
+ transform: rotate(45deg) translate(8px, 8px);
+ }
+
+ .hamburger.is-active span:nth-child(2) {
+ opacity: 0;
+ }
+
+ .hamburger.is-active span:nth-child(3) {
+ transform: rotate(-45deg) translate(7px, -7px);
  }
 
  .nav-links a {
@@ -773,16 +808,106 @@
 
  @media (max-width: 720px) {
  .navbar-inner {
+ flex-direction: row;
+ align-items: center;
+ position: relative;
+ }
+
+ .hamburger {
+ display: flex;
+ }
+
+ .nav-links {
+ display: none;
+ position: absolute;
+ top: calc(100% + 8px);
+ right: 0;
+ background: rgba(255, 249, 245, 0.98);
+ backdrop-filter: blur(12px);
+ border-radius: 16px;
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+ border: 1px solid rgba(255, 215, 122, 0.3);
  flex-direction: column;
- align-items: flex-start;
+ align-items: stretch;
+ gap: 4px;
+ padding: 12px 8px;
+ z-index: 102;
+ font-size: 0.95rem;
+ min-width: 200px;
+ }
+
+ .nav-links.is-open {
+ display: flex;
+ }
+
+ .nav-links a {
+ padding: 10px 16px;
+ font-size: 0.95rem;
+ border-radius: 12px;
+ text-align: left;
  }
 
  .hero-text {
  padding: 20px 18px 22px;
  }
 
+ .hero-cta-row {
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ }
+
+ .hero-cta-row .btn-primary {
+ width: 100%;
+ justify-content: center;
+ }
+
  .floating-cta button {
  padding-inline: 14px;
+ }
+
+ .page {
+ padding: 24px 16px 60px;
+ }
+
+ .hero {
+ gap: 24px;
+ margin-top: 20px;
+ }
+
+ .hero-title {
+ font-size: 1.8rem;
+ }
+
+ .hero-photo-main img {
+ height: 240px;
+ }
+
+ .section-title {
+ font-size: 1.4rem;
+ }
+
+ .bubbles-row {
+ grid-template-columns: 1fr;
+ gap: 12px;
+ }
+
+ .bubble {
+ padding: 14px 16px;
+ font-size: 0.85rem;
+ }
+
+ .levels-grid {
+ grid-template-columns: 1fr;
+ }
+
+ .card {
+ padding: 16px 18px;
+ }
+
+ .pricing-box {
+ padding: 18px 20px;
  }
  }
 
@@ -790,6 +915,49 @@
  .floating-cta button {
  font-size: 0.8rem;
  padding: 8px 12px;
+ }
+
+ .hero-title {
+ font-size: 1.6rem;
+ }
+
+ .hero-subtitle {
+ font-size: 0.9rem;
+ }
+
+ .hero-description {
+ font-size: 0.88rem;
+ }
+
+ .btn-primary {
+ padding: 10px 18px;
+ font-size: 0.9rem;
+ }
+
+ .section-title {
+ font-size: 1.3rem;
+ }
+
+ .card {
+ padding: 14px 16px;
+ }
+
+ .hero-photo-main img {
+ height: 200px;
+ }
+
+ .hero-badge-circle {
+ width: 48px;
+ height: 48px;
+ font-size: 0.7rem;
+ }
+
+ .pricing-main {
+ font-size: 1.1rem;
+ }
+
+ .contact-grid {
+ gap: 16px;
  }
  }
 
@@ -822,7 +990,12 @@
  </div>
  </div>
  <div class="nav-right">
- <nav class="nav-links">
+ <button class="hamburger" id="hamburger" aria-label="Menu">
+ <span></span>
+ <span></span>
+ <span></span>
+ </button>
+ <nav class="nav-links" id="navLinks">
  <a href="#top" data-nav>Start</a>
  <a href="#experience" data-nav>Doświadczenie</a>
  <a href="#metodologia" data-nav>Metodologia</a>
@@ -840,7 +1013,7 @@
  <div class="hero-text">
  <div class="hero-pill">
  <span>English lessons</span>
- <span>Stacjonarnie (Polanowice, Wrocław) &amp; online</span>
+ <span>Polanowice, Wrocław &amp; online</span>
  </div>
 
  <h1 class="hero-title">
@@ -850,7 +1023,7 @@
 
  <p class="hero-subtitle">
  Zależy mi, by uczeń w krótkim czasie mógł naprawdę mówić. 
- Potem już tylko szlifujemy diament. ;)
+ Potem już tylko szlifujemy diament. &#128515;
  </p>
 
  <div class="hero-cta-row">
@@ -1288,6 +1461,51 @@
  document.addEventListener('keydown', e => {
  if (e.key === 'Escape') {
  closeModal();
+ }
+ });
+ })();
+
+ // Hamburger menu
+ (function() {
+ const hamburger = document.getElementById('hamburger');
+ const navLinks = document.getElementById('navLinks');
+ const navLinksItems = navLinks.querySelectorAll('a');
+ const navRight = document.querySelector('.nav-right');
+
+ const toggleMenu = () => {
+ hamburger.classList.toggle('is-active');
+ navLinks.classList.toggle('is-open');
+ };
+
+ const closeMenu = () => {
+ hamburger.classList.remove('is-active');
+ navLinks.classList.remove('is-open');
+ };
+
+ hamburger.addEventListener('click', (e) => {
+ e.stopPropagation();
+ toggleMenu();
+ });
+
+ // Zamknij menu po kliknięciu w link
+ navLinksItems.forEach(link => {
+ link.addEventListener('click', () => {
+ closeMenu();
+ });
+ });
+
+ // Zamknij menu po kliknięciu poza nim
+ document.addEventListener('click', (e) => {
+ if (navLinks.classList.contains('is-open') && 
+     !navRight.contains(e.target)) {
+   closeMenu();
+ }
+ });
+
+ // Zamknij menu po naciśnięciu Escape
+ document.addEventListener('keydown', e => {
+ if (e.key === 'Escape' && navLinks.classList.contains('is-open')) {
+   closeMenu();
  }
  });
  })();
