@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="UTF-8" />
+ <title>Barbara Gregorczyk - Tyburska – lekcje języka angielskiego</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="description" content="Indywidualne lekcje praktycznego języka angielskiego dla dzieci, młodzieży i dorosłych. Polanowice (Wrocław) i online. Dużo mówienia, bez stresu, praktyczne scenki i dopasowane materiały." />
+
+ <!-- Open Graph / SEO -->
+ <meta property="og:title" content="Barbara Gregorczyk Tyburska – lekcje języka angielskiego we Wrocławiu i online">
+ <meta property="og:description" content="Praktyczny angielski dla dzieci, nastolatków i dorosłych. Dużo mówienia, bez stresu. Polanowice (Wrocław) i zajęcia online.">
+ <meta property="og:type" content="website">
+ <!-- PODMIEŃ NA SWOJĄ DOMENĘ -->
+ <meta property="og:url" content="https://twoja-domena.pl/">
+ <!-- PODMIEŃ NA SWÓJ OBRAZEK PODGLĄDOWY -->
+ <meta property="og:image" content="https://twoja-domena.pl/og-image.jpg">
+ <meta property="og:locale" content="pl_PL">
+
+ <!-- Structured data (schema.org) -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "EducationalOrganization",
+ "name": "Barbara Gregorczyk - Tyburska – lekcje języka angielskiego",
+ "description": "Indywidualne lekcje praktycznego języka angielskiego dla dzieci, młodzieży i dorosłych. Polanowice (Wrocław) i online.",
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "Wrocław",
+ "addressRegion": "dolnośląskie",
+ "addressCountry": "PL"
+ },
+ "areaServed": "Wrocław, online",
+ "telephone": "+48 724 158 272",
+ "email": "ba.tyburska@gmail.com"
+ }
+ </script>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+ <style>
+ :root {
+ --bg: #fff9f5;
+ --bg-alt: #ffffff;
+ --accent: #ff9fb6;
+ --accent-strong: #ff7b9a;
+ --accent-soft: #ffe3eb;
+ --accent-yellow: #ffd77a;
+ --accent-mint: #c8f1d9;
+ --accent-lilac: #e4dcff;
+ --nav: #123458;
+ --text: #193046;
+ --muted: #6f7b8c;
+ --border: #f0dde0;
+ --radius-lg: 24px;
+ --radius-pill: 999px;
+ --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.08);
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ html {
+ scroll-behavior: smooth;
+ }
+
+ body {
+ font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+ background: radial-gradient(circle at top left, #ffe9f1 0, #fffdf9 45%, #fdf8ff 100%);
+ color: var(--text);
+ line-height: 1.6;
+ }
+
+ a { color: inherit; text-decoration: none; }
+
+ img {
+ max-width: 100%;
+ display: block;
+ }
+
+ :focus-visible {
+ outline: 2px solid var(--accent-strong);
+ outline-offset: 3px;
+ }
+
+ .page {
+ max-width: 1180px;
+ margin: 0 auto;
+ padding: 24px 20px 60px;
+ }
+
+ /* NAVBAR */
+
+ .navbar {
+ position: sticky;
+ top: 0;
+ z-index: 20;
+ background: rgba(255, 249, 245, 0.92);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(255, 215, 122, 0.3);
+ }
+
+ .navbar-inner {
+ max-width: 1180px;
+ margin: 0 auto;
+ padding: 10px 20px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 24px;
+ }
+
+ .logo-wrap {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ }
+
+ .logo-icon {
+ width: 34px;
+ height: 34px;
+ border-radius: 50%;
+ background: conic-gradient(from 180deg, #ff9fb6, #ffd77a, #c8f1d9, #e4dcff, #ff9fb6);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ font-size: 18px;
+ font-weight: 600;
+ box-shadow: 0 10px 20px rgba(255, 155, 182, 0.5);
+ }
+
+ .logo-text-main {
+ font-weight: 600;
+ font-size: 0.98rem;
+ color: var(--nav);
+ }
+
+ .logo-text-sub {
+ font-size: 0.78rem;
+ color: var(--muted);
+ }
+
+ .nav-right {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 16px;
+ font-size: 0.9rem;
+ flex-wrap: wrap;
+ }
+
+ .nav-links a {
+ padding: 6px 14px;
+ border-radius: var(--radius-pill);
+ color: var(--nav);
+ font-weight: 500;
+ transition: background 0.18s ease, transform 0.18s ease, color 0.18s ease;
+ }
+
+ .nav-links a:hover {
+ background: rgba(255, 227, 235, 0.9);
+ transform: translateY(-1px);
+ color: #102339;
+ }
+
+ .nav-links a.nav-active {
+ background: var(--accent-soft);
+ color: var(--nav);
+ }
+
+ /* HERO */
+
+ .hero {
+ margin-top: 28px;
+ display: grid;
+ grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+ gap: 36px;
+ align-items: center;
+ }
+
+ .hero-text {
+ padding: 26px 24px 28px;
+ border-radius: 32px;
+ background: linear-gradient(135deg, #fff, #ffe5ef);
+ box-shadow: var(--shadow-soft);
+ position: relative;
+ overflow: hidden;
+ }
+
+ .hero-pill {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ font-size: 0.78rem;
+ padding: 5px 12px;
+ border-radius: var(--radius-pill);
+ background: rgba(255, 255, 255, 0.85);
+ border: 1px solid rgba(255, 215, 122, 0.6);
+ color: var(--muted);
+ margin-bottom: 10px;
+ }
+
+ .hero-pill span:first-child {
+ text-transform: uppercase;
+ letter-spacing: 0.12em;
+ color: #ff7b9a;
+ font-weight: 600;
+ }
+
+ .hero-title {
+ font-size: clamp(2.1rem, 3vw, 2.5rem);
+ font-weight: 700;
+ color: var(--nav);
+ margin-bottom: 6px;
+ }
+
+ .hero-highlight {
+ color: #ff7b9a;
+ }
+
+ .hero-subtitle {
+ font-size: 0.98rem;
+ color: var(--muted);
+ margin-bottom: 12px;
+ }
+
+ .hero-description {
+ font-size: 0.93rem;
+ margin-bottom: 16px;
+ }
+
+ .hero-cta-row {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ gap: 12px;
+ margin-top: 4px;
+ }
+
+ .btn-primary {
+ display: inline-flex;
+ align-items: center;
+ gap: 9px;
+ padding: 11px 20px;
+ border-radius: var(--radius-pill);
+ border: none;
+ cursor: pointer;
+ background: var(--accent-strong);
+ color: #fff;
+ font-size: 0.95rem;
+ font-weight: 600;
+ box-shadow: 0 14px 30px rgba(255, 123, 154, 0.55);
+ transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+ }
+
+ .btn-primary:hover {
+ transform: translateY(-1px);
+ box-shadow: 0 18px 40px rgba(255, 123, 154, 0.6);
+ background: #ff648d;
+ }
+
+ .hero-note {
+ font-size: 0.78rem;
+ color: var(--muted);
+ }
+
+ .hero-tag-chips {
+ margin-top: 14px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ }
+
+ .chip {
+ font-size: 0.78rem;
+ padding: 4px 9px;
+ border-radius: var(--radius-pill);
+ background: rgba(255, 255, 255, 0.9);
+ border: 1px dashed rgba(255, 159, 182, 0.6);
+ }
+
+ .hero-photo-wrap {
+ position: relative;
+ }
+
+ .hero-card {
+ border-radius: 32px;
+ background: #123458;
+ color: #fff;
+ padding: 10px 10px 16px;
+ box-shadow: var(--shadow-soft);
+ position: relative;
+ overflow: hidden;
+ }
+
+ .hero-photo-main {
+ border-radius: 26px;
+ overflow: hidden;
+ border: 4px solid #ffe3eb;
+ }
+
+ .hero-photo-main img {
+ width: 100%;
+ height: 320px;
+ object-fit: cover;
+ }
+
+ .hero-floating {
+ position: absolute;
+ bottom: -14px;
+ left: -10px;
+ background: rgba(255, 249, 245, 0.95);
+ color: var(--text);
+ border-radius: 20px;
+ padding: 10px 14px;
+ font-size: 0.8rem;
+ box-shadow: 0 14px 40px rgba(0, 0, 0, 0.26);
+ }
+
+ .hero-floating strong { display: block; }
+
+ .hero-badges {
+ position: absolute;
+ top: 8px;
+ right: 10px;
+ display: flex;
+ flex-direction: column;
+ gap: 6px;
+ }
+
+ .hero-badge-circle {
+ width: 56px;
+ height: 56px;
+ border-radius: 50%;
+ background: #ffd77a;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 0.75rem;
+ font-weight: 700;
+ text-align: center;
+ padding: 6px;
+ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+ }
+
+ .hero-badge-circle:nth-child(2) {
+ background: #c8f1d9;
+ color: #174132;
+ }
+
+ /* SECTION COMMON */
+
+ section {
+ margin-top: 40px;
+ }
+
+ .section-header {
+ margin-bottom: 18px;
+ text-align: center;
+ }
+
+ .section-kicker {
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 0.14em;
+ color: var(--muted);
+ margin-bottom: 3px;
+ }
+
+ .section-title {
+ font-size: 1.6rem;
+ font-weight: 700;
+ color: var(--nav);
+ }
+
+ .section-subtitle {
+ font-size: 0.9rem;
+ color: var(--muted);
+ margin-top: 4px;
+ }
+
+ /* REVEAL ANIMATION */
+
+ .reveal {
+ opacity: 0;
+ transform: translateY(24px);
+ transition: opacity 0.6s ease, transform 0.6s ease;
+ }
+
+ .reveal.is-visible {
+ opacity: 1;
+ transform: translateY(0);
+ }
+
+ /* BĄBELKI */
+
+ .bubbles-row {
+ margin-top: 22px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 16px;
+ }
+
+ .bubble {
+ border-radius: 999px;
+ padding: 16px 18px;
+ color: #123458;
+ font-size: 0.9rem;
+ font-weight: 500;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ }
+
+ .bubble-yellow { background: var(--accent-yellow); }
+ .bubble-pink { background: var(--accent); color: #fff; }
+ .bubble-mint { background: var(--accent-mint); }
+ .bubble-lilac { background: var(--accent-lilac); }
+
+ /* POZIOMY */
+
+ .levels-wrapper {
+ margin-top: 24px;
+ background: var(--bg-alt);
+ border-radius: 32px;
+ padding: 22px 20px 24px;
+ box-shadow: var(--shadow-soft);
+ }
+
+ .levels-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+ gap: 14px;
+ }
+
+ .level-card {
+ background: #fff7fb;
+ border-radius: 20px;
+ padding: 10px 12px;
+ border: 1px solid #f6d8eb;
+ }
+
+ .level-header {
+ display: flex;
+ align-items: baseline;
+ gap: 6px;
+ margin-bottom: 4px;
+ }
+
+ .level-header span:first-child {
+ font-weight: 700;
+ font-size: 1.05rem;
+ }
+
+ .level-header span:last-child {
+ font-size: 0.78rem;
+ color: var(--muted);
+ }
+
+ .level-card p {
+ font-size: 0.84rem;
+ color: var(--muted);
+ }
+
+ .levels-note {
+ margin-top: 14px;
+ font-size: 0.85rem;
+ color: var(--muted);
+ text-align: center;
+ }
+
+ /* DLA KOGO / METODOLOGIA */
+
+ .for-whom {
+ display: grid;
+ grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+ gap: 24px;
+ margin-top: 26px;
+ }
+
+ .card {
+ background: var(--bg-alt);
+ border-radius: 26px;
+ padding: 18px 20px;
+ box-shadow: var(--shadow-soft);
+ border: 1px solid var(--border);
+ }
+
+ .card h3 {
+ font-size: 1.1rem;
+ margin-bottom: 6px;
+ color: var(--nav);
+ }
+
+ .card h4 {
+ font-size: 0.92rem;
+ margin-top: 12px;
+ margin-bottom: 4px;
+ color: var(--nav);
+ }
+
+ .card p {
+ font-size: 0.9rem;
+ color: var(--muted);
+ line-height: 1.7;
+ }
+
+ .card ul {
+ margin-top: 6px;
+ padding-left: 20px;
+ font-size: 0.9rem;
+ color: var(--muted);
+ }
+
+ .card li + li { margin-top: 4px; }
+
+ /* DOŚWIADCZENIE & LOCATION */
+
+ .split-2 {
+ display: grid;
+ grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+ gap: 22px;
+ margin-top: 22px;
+ }
+
+ .photo-card {
+ border-radius: 26px;
+ overflow: hidden;
+ box-shadow: var(--shadow-soft);
+ }
+
+ .photo-card img {
+ width: 100%;
+ height: 260px;
+ object-fit: cover;
+ }
+
+ .pill-list {
+ margin-top: 10px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ }
+
+ .pill {
+ font-size: 0.78rem;
+ padding: 4px 10px;
+ border-radius: var(--radius-pill);
+ background: var(--accent-soft);
+ color: var(--nav);
+ }
+
+ /* CENNIK / CONTACT */
+
+ .pricing-box {
+ margin-top: 24px;
+ background: var(--bg-alt);
+ border-radius: 32px;
+ padding: 20px 22px;
+ box-shadow: var(--shadow-soft);
+ border: 1px solid var(--border);
+ max-width: 520px;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+ }
+
+ .pricing-main {
+ font-size: 1.2rem;
+ font-weight: 700;
+ color: var(--nav);
+ }
+
+ .pricing-note {
+ font-size: 0.9rem;
+ color: var(--muted);
+ margin-top: 4px;
+ }
+
+ .contact-grid {
+ margin-top: 26px;
+ display: grid;
+ grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.3fr);
+ gap: 22px;
+ }
+
+ .contact-item {
+ margin-bottom: 10px;
+ }
+
+ .contact-label {
+ font-size: 0.78rem;
+ text-transform: uppercase;
+ letter-spacing: 0.14em;
+ color: var(--muted);
+ margin-bottom: 3px;
+ }
+
+ .contact-link {
+ font-weight: 600;
+ color: var(--nav);
+ text-decoration: underline;
+ text-decoration-thickness: 1px;
+ }
+
+ .contact-link:hover { text-decoration-thickness: 2px; }
+
+ .contact-form {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ margin-top: 10px;
+ }
+
+ .contact-form label {
+ font-size: 0.85rem;
+ color: var(--muted);
+ display: flex;
+ flex-direction: column;
+ gap: 4px;
+ }
+
+ .contact-form input,
+ .contact-form select,
+ .contact-form textarea {
+ border-radius: 12px;
+ border: 1px solid var(--border);
+ padding: 8px 10px;
+ font-family: inherit;
+ font-size: 0.9rem;
+ background: var(--bg-alt);
+ }
+
+ .contact-form textarea {
+ resize: vertical;
+ min-height: 80px;
+ }
+
+ footer {
+ margin-top: 40px;
+ padding-top: 14px;
+ border-top: 1px solid rgba(255, 159, 182, 0.4);
+ font-size: 0.8rem;
+ color: var(--muted);
+ text-align: center;
+ }
+
+ /* FLOATING CTA BUTTON + MODAL */
+
+ .floating-cta {
+ position: fixed;
+ right: 18px;
+ bottom: 20px;
+ z-index: 40;
+ }
+
+ .floating-cta button {
+ border-radius: 999px;
+ border: none;
+ padding: 12px 18px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ cursor: pointer;
+ background: var(--accent-strong);
+ color: #fff;
+ font-weight: 600;
+ box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+ font-size: 0.9rem;
+ }
+
+ .floating-cta button span {
+ font-size: 1.1rem;
+ }
+
+ .modal-backdrop {
+ position: fixed;
+ inset: 0;
+ background: rgba(15,23,42,0.6);
+ display: none;
+ align-items: center;
+ justify-content: center;
+ z-index: 50;
+ }
+
+ .modal-backdrop.is-open {
+ display: flex;
+ }
+
+ .modal {
+ background: var(--bg-alt);
+ border-radius: 26px;
+ padding: 20px 22px;
+ max-width: 360px;
+ width: 90%;
+ box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+ border: 1px solid var(--border);
+ }
+
+ .modal-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 10px;
+ }
+
+ .modal-title {
+ font-size: 1rem;
+ font-weight: 600;
+ color: var(--nav);
+ }
+
+ .modal-close {
+ border: none;
+ background: transparent;
+ font-size: 1.2rem;
+ cursor: pointer;
+ color: var(--muted);
+ }
+
+ .modal p {
+ font-size: 0.9rem;
+ color: var(--muted);
+ margin-bottom: 10px;
+ }
+
+ .modal a {
+ display: block;
+ margin-top: 6px;
+ font-size: 0.9rem;
+ font-weight: 600;
+ }
+
+ /* RESPONSIVE */
+
+ @media (max-width: 960px) {
+ .hero {
+ grid-template-columns: minmax(0, 1fr);
+ }
+
+ .hero-photo-main img {
+ height: 280px;
+ }
+
+ .hero-floating {
+ position: static;
+ margin-top: 10px;
+ box-shadow: none;
+ }
+
+ .hero-badges {
+ top: 10px;
+ right: 12px;
+ flex-direction: row;
+ }
+
+ .for-whom,
+ .split-2,
+ .contact-grid {
+ grid-template-columns: minmax(0, 1fr);
+ }
+ }
+
+ @media (max-width: 720px) {
+ .navbar-inner {
+ flex-direction: column;
+ align-items: flex-start;
+ }
+
+ .hero-text {
+ padding: 20px 18px 22px;
+ }
+
+ .floating-cta button {
+ padding-inline: 14px;
+ }
+ }
+
+ @media (max-width: 480px) {
+ .floating-cta button {
+ font-size: 0.8rem;
+ padding: 8px 12px;
+ }
+ }
+
+ /* prefers-reduced-motion: wyłącz animacje i smooth scroll */
+ @media (prefers-reduced-motion: reduce) {
+ html {
+ scroll-behavior: auto;
+ }
+ * {
+ animation-duration: 0.001ms !important;
+ animation-iteration-count: 1 !important;
+ transition-duration: 0.001ms !important;
+ scroll-behavior: auto !important;
+ }
+ .reveal {
+ opacity: 1 !important;
+ transform: none !important;
+ }
+ }
+ </style>
+</head>
+<body>
+<header class="navbar">
+ <div class="navbar-inner">
+ <div class="logo-wrap">
+ <div class="logo-icon">BT</div>
+ <div>
+ <div class="logo-text-main">Barbara Gregorczyk - Tyburska</div>
+ <div class="logo-text-sub">praktyczny język angielski</div>
+ </div>
+ </div>
+ <div class="nav-right">
+ <nav class="nav-links">
+ <a href="#top" data-nav>Start</a>
+ <a href="#experience" data-nav>Doświadczenie</a>
+ <a href="#metodologia" data-nav>Metodologia</a>
+ <a href="#levels" data-nav>Poziomy</a>
+ <a href="#pricing" data-nav>Cennik</a>
+ <a href="#contact" data-nav>Kontakt</a>
+ </nav>
+ </div>
+ </div>
+</header>
+
+<main class="page">
+ <!-- START / HERO -->
+ <section class="hero reveal" id="top">
+ <div class="hero-text">
+ <div class="hero-pill">
+ <span>English lessons</span>
+ <span>Stacjonarnie (Polanowice, Wrocław) &amp; online</span>
+ </div>
+
+ <h1 class="hero-title">
+ Uczę <span class="hero-highlight">praktycznego angielskiego</span>,
+ tak abyś mógł jak najszybciej poczuć się swobodnie.
+ </h1>
+
+ <p class="hero-subtitle">
+ Zależy mi, by uczeń w krótkim czasie mógł naprawdę mówić. 
+ Potem już tylko szlifujemy diament. ;)
+ </p>
+
+ <div class="hero-cta-row">
+ <a href="#contact" class="btn-primary">
+ Umów się na lekcję próbną
+ </a>
+ <span class="hero-note">
+ Napisz kilka słów o sobie, a zaproponuję najlepszą formę zajęć.
+ </span>
+ </div>
+
+ <div class="hero-tag-chips">
+ <span class="chip">bez stresu</span>
+ <span class="chip">dużo mówienia</span>
+ <span class="chip">praktyczne scenki</span>
+ <span class="chip">dopasowane materiały</span>
+ </div>
+ </div>
+
+ <div class="hero-photo-wrap">
+ <div class="hero-card">
+ <div class="hero-photo-main">
+ <!-- PODMIEŃ NA SWOJE ZDJĘCIE -->
+ <img
+ src="barbara-eng.png"
+ alt="Nauczycielka języka angielskiego podczas lekcji"
+ loading="lazy"
+ />
+ </div>
+
+ <div class="hero-badges">
+ <div class="hero-badge-circle">
+ 1:1<br/>zajęcia
+ </div>
+ <div class="hero-badge-circle">
+ dzieci<br/>dorośli
+ </div>
+ 
+ </div>
+ </div>
+ </section>
+
+ <!-- BĄBELKI – nadal jako część „Start” -->
+ <section class="reveal">
+ <div class="section-header">
+ <p class="section-kicker">Co znajdziesz na zajęciach?</p>
+ <h2 class="section-title">Przyjazna atmosfera, konkretny postęp</h2>
+ <p class="section-subtitle">
+ Angielski, który przydaje się naprawdę – w szkole, pracy, podróży i codziennych rozmowach.
+ </p>
+ </div>
+
+ <div class="bubbles-row">
+ <div class="bubble bubble-yellow">Praktyczne scenki z życia</div>
+ <div class="bubble bubble-pink">Dużo mówienia zamiast wkuwania</div>
+ <div class="bubble bubble-mint">Indywidualne podejście</div>
+ <div class="bubble bubble-mint">Dzieci uczą się w ruchu z wykorzystaniem prawdziwych rekwizytów</div>
+ <div class="bubble bubble-mint">Piszę autorskie teksty o Was samych, aby wspierać Was w naturalnym wyrażaniu siebie</div>
+ <div class="bubble bubble-lilac">Bezpieczna, wspierająca atmosfera</div>
+ </div>
+ </section>
+
+ <!-- DOŚWIADCZENIE -->
+ <section id="experience" class="reveal">
+ <div class="section-header">
+ <p class="section-kicker">O mnie</p>
+ <h2 class="section-title">Moje doświadczenie zawodowe</h2>
+ <p class="section-subtitle">
+ Łączę wykształcenie filologiczne z praktyką nauczania i wieloletnią pracą w środowisku międzynarodowym.
+ </p>
+ </div>
+
+ <div class="split-2">
+ <article class="card">
+ <p>
+ Jestem magistrem filologii angielskiej ze specjalizacją w nauczaniu języka obcego.
+ Zdobyte wykształcenie wykorzystywałam w pracy w szkole językowej oraz aktualnie podczas 
+ indywidualnych korepetycji.
+ </p>
+ <p style="margin-top: 8px;">
+ Posiadam wieloletnie doświadczenie we współpracy międzynarodowej, gdzie
+ <strong>angielski był moim codziennym narzędziem pracy</strong>. Pracowałam m.in. jako sekretarz
+ pisma anglojęzycznego, co nauczyło mnie precyzji i swobody w posługiwaniu się językiem.
+ </p>
+ <p style="margin-top: 8px;">
+ Dzięki temu wiem, jak uczyć angielskiego nie tylko z podręczników, ale przede wszystkim
+ <strong>w praktyce</strong> – tak, aby służył w pracy, podróży i codziennej komunikacji.
+ </p>
+
+ <div class="pill-list">
+ <span class="pill">filologia angielska</span>
+ <span class="pill">doświadczenie w nauczaniu</span>
+ <span class="pill">praktyczne użycie języka</span>
+ </div>
+ </article>
+
+ <div>
+ <div class="photo-card">
+ <!-- PODMIEŃ NA SWOJE ZDJĘCIE Z ZAJĘĆ / KLIMATYCZNE -->
+ <img
+ src="https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&w=1200"
+ alt="Zajęcia z języka angielskiego w przyjaznej atmosferze"
+ loading="lazy"
+ />
+ </div>
+
+ <article class="card" style="margin-top: 10px;">
+ <h4>Miejsce i forma zajęć</h4>
+ <ul>
+ <li><strong>Stacjonarnie</strong> u mnie w domu – Polanowice, ul. Stradomska, Wrocław,</li>
+ <li><strong>Online</strong> – wygodnie z domu, z dowolnego miejsca.</li>
+ </ul>
+ <p style="margin-top: 6px;">
+ Prowadzę zajęcia indywidualne.
+ </p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <!-- METODOLOGIA (DLA KOGO + GRUPY WIEKOWE) -->
+ <section id="metodologia" class="reveal">
+ <div class="section-header">
+ <p class="section-kicker">Metodologia</p>
+ <h2 class="section-title">Jak uczę i z kim pracuję?</h2>
+ <p class="section-subtitle">
+ Pracuję z dziećmi, nastolatkami, dorosłymi oraz osobami uczącymi się angielskiego biznesowego
+ i angielskiego do pracy. Metody dopasowuję do wieku, osobowości i celów każdej osoby.
+ </p>
+ </div>
+
+ <div class="for-whom">
+ <article class="card">
+ <h3>Dla dzieci i nastolatków</h3>
+ <p>
+ Dzieci uczą się języka przez <strong>działanie, zabawę i prawdziwe sytuacje</strong>. 
+ Nie siedzimy tylko przy biurku – angażuję ucznia w ruch, scenki i praktyczne zadania.
+ </p>
+
+ <h4>Co wyróżnia moje indywidualne zajęcia?</h4>
+ <ul>
+ <li>nauka na żywo poprzez odgrywanie ról: w restauracji, na poczcie, u fryzjera itd.,</li>
+ <li>prawdziwe z rekwizyty z życia wzięte – talerze, sztućce, ubrania, bilety, znaczki itp.,</li>
+ <li>nauka poprzez wykonywanie naturalnych czynności podczas lekcji (np. wspólne przygotowanie owocowej sałatki, pieczenie prostych ciasteczek itp.),</li>
+ <li>dużo ruchu i zabawy, również na dworze – np. lepienie bałwana, sadzenie kwiatów, rozwieszanie prania ucząc się naturalnych zwrotów</li>
+ </ul>
+
+ <p style="margin-top: 8px;">
+ To korepetycje, które dziecko <strong>naprawdę przeżywa</strong>. 
+ Dzięki temu szybciej zapamiętuje słówka i zaczyna mówić bez stresu.
+ </p>
+
+ <p style="margin-top: 10px;">
+ Pomagam w codziennej nauce, <strong>nadrabianiu zaległości</strong> oraz przygotowaniach
+ do sprawdzianów i egzaminów. Tworzę bezpieczną atmosferę, w której głos ucznia naprawdę wybrzmiewa.
+ </p>
+ </article>
+
+ <article class="card">
+ <h3>Dla dorosłych</h3>
+ <p>
+ Na każdą lekcję przygotowuję i konstruuję <strong>spersonalizowane materiały</strong> – teksty, dialogi
+ i historie oparte na Twojej pracy, zainteresowaniach i codziennych sytuacjach. Lubisz sporty walki, grasz na jakimś instrumencie? Na pewno wykorzystam to do napisania krótkiego tekstu jako bazy do dalszej dyskusji. Pisząc autorskie teksty o Was samych, staram się wspierać Was w naturalnym wyrażaniu siebie.
+ </p>
+ <p style="margin-top: 8px;">
+ Dzięki temu możesz swobodnie opowiadać o sobie, swoim otoczeniu oraz wyrażać opinie na wiele
+ tematów, używając języka naturalnie i praktycznie.
+ </p>
+ <p style="margin-top: 8px;">
+ Gramatyka jest wpleciona w lekcje – jako <strong>narzędzie do wyrażania myśli</strong>,
+ a nie osobny „suchy” dział. Niemniej w przypadku dorosłych uczniów uważam ją za nieodzowny element. Lekcje są angażujące i przekładają się na realny postęp w mówieniu.
+ </p>
+
+ <h4>Na zajęciach z dorosłymi pracujemy nad:</h4>
+ <ul>
+ <li>nauką od podstaw lub rozwijaniem płynności,</li>
+ <li>angielskim do pracy, podróży i codziennych rozmów,</li>
+ <li>konwersacjami i przełamywaniem bariery językowej,</li>
+ <li>rozwojem słownictwa dopasowanego do Twoich potrzeb.</li>
+ </ul>
+ </article>
+ </div>
+
+ <article class="card" style="margin-top: 20px;">
+ <h3>Angielski do pracy i kariery</h3>
+ <p>
+ Jeśli potrzebujesz języka głównie zawodowo, skupimy się na tym, co naprawdę wykorzystasz:
+ </p>
+ <ul>
+ <li>angielski biznesowy,</li>
+ <li>korespondencja i spotkania po angielsku,</li>
+ <li>przygotowanie do rozmów kwalifikacyjnych i prezentacji.</li>
+ </ul>
+ <p style="margin-top: 8px;">
+ Pracujemy na przykładach z Twojej branży, tak abyś czuł się pewnie w realnych sytuacjach.
+ </p>
+ </article>
+ </section>
+
+ <!-- POZIOMY -->
+ <section id="levels" class="reveal">
+ <div class="section-header">
+ <p class="section-kicker">Poziomy</p>
+ <h2 class="section-title">Poziomy zaawansowania, z którymi pracuję</h2>
+ <p class="section-subtitle">
+ Uczę na poziomach od A1 do C1 – od pierwszego kontaktu z językiem, aż po swobodne, zaawansowane
+ użycie angielskiego w pracy, na studiach i w życiu codziennym.
+ </p>
+ </div>
+
+ <div class="levels-wrapper">
+ <div class="levels-grid">
+ <article class="level-card">
+ <div class="level-header">
+ <span>A1</span><span>początkujący</span>
+ </div>
+ <p>Pierwsze kroki: podstawowe słownictwo, proste zdania i oswajanie z mówieniem.</p>
+ </article>
+
+ <article class="level-card">
+ <div class="level-header">
+ <span>A2</span><span>podstawy komunikacji</span>
+ </div>
+ <p>Codzienne sytuacje: zakupy, podróże, przedstawianie się, krótkie rozmowy.</p>
+ </article>
+
+ <article class="level-card">
+ <div class="level-header">
+ <span>B1</span><span>średnio zaawansowany</span>
+ </div>
+ <p>Swobodniejsze mówienie o sobie, pracy, zainteresowaniach; rozbudowanie słownictwa.</p>
+ </article>
+
+ <article class="level-card">
+ <div class="level-header">
+ <span>B2</span><span>swobodne użycie języka</span>
+ </div>
+ <p>Pewna komunikacja w pracy, na studiach i w podróży; dłuższe teksty i dyskusje.</p>
+ </article>
+
+ <article class="level-card">
+ <div class="level-header">
+ <span>C1</span><span>zaawansowany</span>
+ </div>
+ <p>Precyzyjne wyrażanie myśli, język formalny, złożone tematy i praca z wymagającymi tekstami.</p>
+ </article>
+ </div>
+
+ <p class="levels-note">
+ Pracuję z uczniami <strong>szkół podstawowych</strong>, <strong>liceów/techników</strong>,
+ <strong>studentami</strong> oraz dorosłymi. 
+ Zakres zawsze dopasowuję do celu – szkoła, studia, praca, podróże lub rozwój osobisty.
+ </p>
+ </div>
+ </section>
+
+ <!-- CENNIK -->
+ <section id="pricing" class="reveal">
+ <div class="section-header">
+ <p class="section-kicker">Cennik</p>
+ <h2 class="section-title">Ile kosztują zajęcia?</h2>
+ </div>
+
+ <div class="pricing-box">
+ <p class="pricing-main">60 minut – 100 zł</p>
+ <p class="pricing-main" style="margin-top: 4px;">45 minut – 75 zł</p>
+ <p class="pricing-note" style="margin-top: 10px;">
+ Podczas pierwszego kontaktu wspólnie ustalimy częstotliwość i formę zajęć tak,
+ aby były dopasowane do Twoich potrzeb i możliwości czasowych.
+ </p>
+ </div>
+ </section>
+
+ <!-- KONTAKT -->
+ <section id="contact" class="reveal">
+ <div class="section-header">
+ <p class="section-kicker">Kontakt</p>
+ <h2 class="section-title">Porozmawiajmy o Twoim angielskim</h2>
+ </div>
+
+ <div class="contact-grid">
+ <article class="card">
+ <div class="contact-item">
+ <div class="contact-label">E-mail</div>
+ <a class="contact-link" href="mailto:ba.tyburska@gmail.com">
+ ba.tyburska@gmail.com
+ </a>
+ </div>
+ <div class="contact-item">
+ <div class="contact-label">Telefon</div>
+ <a class="contact-link" href="tel:+48724158272">
+ 724&nbsp;158&nbsp;272
+ </a>
+ </div>
+ <div class="contact-item">
+ <div class="contact-label">Miejsce zajęć</div>
+ <p>
+ Stacjonarnie: Polanowice, Wrocław<br/>
+ Online: z dowolnego miejsca na świecie
+ </p>
+ </div>
+ </article>
+
+ <article class="card">
+ <h3>Jak napisać pierwszą wiadomość?</h3>
+ <p>
+ Napisz proszę:
+ </p>
+ <ul style="margin-top: 4px; padding-left: 20px; font-size: 0.9rem; color: var(--muted);">
+ <li>dla kogo są zajęcia (dziecko, nastolatek, dorosły),</li>
+ <li>jaki jest mniej więcej poziom,</li>
+ <li>jaki masz cel (bieżąca nauka, egzamin, praca, przełamanie bariery).</li>
+ </ul>
+ <p style="margin-top: 8px;">
+ Możesz napisać maila samodzielnie albo skorzystać z krótkiego formularza poniżej:
+ </p>
+
+ <!-- PROSTY FORMULARZ – PODMIEŃ action NA SWÓJ BACKEND / USŁUGĘ FORMULARZY -->
+ <form class="contact-form" action="#" method="POST">
+ <label>
+ Imię
+ <input type="text" name="name" required>
+ </label>
+ <label>
+ Dla kogo są zajęcia?
+ <select name="who" required>
+ <option value="">Wybierz</option>
+ <option value="dziecko">Dziecko</option>
+ <option value="nastolatek">Nastolatek</option>
+ <option value="dorosly">Dorosły</option>
+ </select>
+ </label>
+ <label>
+ Krótka wiadomość
+ <textarea name="message" rows="3" required placeholder="Np. poziom, cel zajęć, dogodne dni i godziny"></textarea>
+ </label>
+ <button type="submit" class="btn-primary">
+ Wyślij wiadomość
+ </button>
+ </form>
+ </article>
+ </div>
+ </section>
+
+ <footer>
+ © <span id="year"></span> Barbara Gregorczyk Tyburska – indywidualne lekcje języka angielskiego
+ </footer>
+</main>
+
+<!-- PŁYWAJĄCY PRZYCISK & MODAL -->
+<div class="floating-cta">
+ <button id="openCta">
+ <span>📅</span>
+ <span>Umów lekcję</span>
+ </button>
+</div>
+
+<div class="modal-backdrop" id="ctaModal">
+ <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal-header">
+ <div class="modal-title" id="modalTitle">Umów lekcję próbną</div>
+ <button class="modal-close" id="closeCta" aria-label="Zamknij">×</button>
+ </div>
+ <p>
+ Napisz lub zadzwoń, a odezwę się z propozycją terminów i formy zajęć.
+ </p>
+ <a href="mailto:ba.tyburska@gmail.com">✉️ ba.tyburska@gmail.com</a>
+ <a href="tel:+48724158272">📞 724&nbsp;158&nbsp;272</a>
+ </div>
+</div>
+
+<script>
+ // Ustawianie roku
+ document.getElementById("year").textContent = new Date().getFullYear();
+
+ // Podświetlanie aktywnej sekcji w menu
+ (function() {
+ const navLinks = document.querySelectorAll('.nav-links a[data-nav]');
+ const sections = Array.from(navLinks).map(link => {
+ const id = link.getAttribute('href').substring(1);
+ return document.getElementById(id);
+ }).filter(Boolean);
+
+ const observer = new IntersectionObserver(entries => {
+ entries.forEach(entry => {
+ const id = entry.target.id;
+ const link = document.querySelector('.nav-links a[href="#' + id + '"]');
+ if (!link) return;
+ if (entry.isIntersecting && entry.intersectionRatio > 0.4) {
+ navLinks.forEach(l => l.classList.remove('nav-active'));
+ link.classList.add('nav-active');
+ }
+ });
+ }, {
+ threshold: 0.4
+ });
+
+ sections.forEach(section => observer.observe(section));
+ })();
+
+ // Scroll reveal (sekcje pojawiają się z animacją)
+ (function() {
+ const revealElements = document.querySelectorAll('.reveal');
+ const observer = new IntersectionObserver(entries => {
+ entries.forEach(entry => {
+ if (entry.isIntersecting) {
+ entry.target.classList.add('is-visible');
+ observer.unobserve(entry.target);
+ }
+ });
+ }, {
+ threshold: 0.2
+ });
+
+ revealElements.forEach(el => observer.observe(el));
+ })();
+
+ // Floating CTA modal
+ (function() {
+ const openBtn = document.getElementById('openCta');
+ const closeBtn = document.getElementById('closeCta');
+ const modal = document.getElementById('ctaModal');
+
+ const openModal = () => modal.classList.add('is-open');
+ const closeModal = () => modal.classList.remove('is-open');
+
+ openBtn.addEventListener('click', openModal);
+ closeBtn.addEventListener('click', closeModal);
+ modal.addEventListener('click', e => {
+ if (e.target === modal) {
+ closeModal();
+ }
+ });
+
+ document.addEventListener('keydown', e => {
+ if (e.key === 'Escape') {
+ closeModal();
+ }
+ });
+ })();
+</script>
+</body>
+</html>
